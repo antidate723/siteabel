@@ -1,44 +1,80 @@
-/* Resetare stiluri implicite */
+
+/*-------------------- Resetare stiluri implicite --------------------*/
+/* Această regulă se aplică tuturor elementelor pentru a elimina marginile și padding-ul implicite și pentru a seta un box-sizing consistent */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  background: rgb(31, 25, 25);
+  margin: 0;               /* Elimină marginile implicite */
+  padding: 0;              /* Elimină padding-ul implicit */
+  box-sizing: border-box;  /* Include padding-ul și border-ul în calculul lățimii elementului */
+  font-family: Arial, sans-serif;  /* Setează fontul implicit */
+  background: rgb(0, 0, 0); /* Fundal implicit negru (poți modifica ulterior dacă dorești) */
 }
 
-/* Meniu de navigație */
-header {
-  background-color: #333;
-  color: white;
-  padding: 15px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+/*-------------------- Stilizare pentru body --------------------*/
+/* Setează stilurile de bază pentru pagina */
+body {
+  font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
+  margin: 0;      /* Fără margini implicite */
+  padding: 0;     /* Fără padding */
+  text-align: center;  /* Centrează textul în pagină */
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: auto;
+/*-------------------- Bara de navigare (navbar) --------------------*/
+.navbar {
+  background-color: #ffffff;  /* Fundal alb pentru bara de navigare */
+  padding: 10px;              /* Spațiere internă */
+  box-shadow: 0 4px 6px rgba(255, 0, 0, 0); /* Umbra; aici nu are efect deoarece alpha e 0 */
+  position: block;            /* Tip de poziționare; de obicei se folosește 'relative' sau 'fixed', dar aici este 'block' */
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
+/*-------------------- Butonul de toggle pentru meniu --------------------*/
+.menu-toggle {
+  cursor: pointer;        /* Schimbă cursorul la pointer pentru a indica interactivitate */
+  font-size: 24px;        /* Mărimea fontului pentru buton */
+  border: none;           /* Fără bordură */
+  background: #ffffff;     /* Fundal alb */
+  display: block;         /* Afișează ca element bloc */
+  margin: auto;           /* Centrează pe orizontală */
 }
 
-nav ul li {
-  margin-left: 20px;
+/*-------------------- Lista de meniuri (menu-items) --------------------*/
+.menu-items {
+  list-style: none;       /* Elimină marcajele implicite ale listei */
+  padding: 0;             /* Fără padding */
+  margin: 0;              /* Fără margin */
+  display: none;          /* Ascunsă inițial (va fi afișată la click) */
+  background: transparent; /* Fundal transparent */
+  position: relative;     /* Poziționare relativă */
+  width: 100%;            /* Lățime completă */
+  box-shadow: none;       /* Fără umbră */
+  /*box-shadow: 0 0px 0px rgba(255, 255, 255, 0);*/  /* Alternativ: o altă setare de umbră, momentan comentată */
 }
 
-nav ul li a {
-  color: rgb(114, 30, 30);
-  text-decoration: none;
-  font-size: 18px;
+/*-------------------- Elementele individuale din meniu --------------------*/
+.menu-items li {
+  padding: 10px;                   /* Spațiere internă pentru fiecare element */
+  border-bottom: 1px solid #ddd;   /* Linie de separare între elemente */
+  background: #ffffff;             /* Fundal alb pentru fiecare element */
+  color: rgb(0, 0, 0);              /* Text negru */
+}
+
+/* La trecerea mouse-ului peste un element de meniu, se schimbă fundalul */
+.menu-items li:hover {
+  background: #f0f0f0;             /* Fundal gri deschis la hover */
+}
+
+/*-------------------- Meniul afișat (când se adaugă clasa 'show') --------------------*/
+.menu-items.show {
+  display: block;    /* Afișează lista de meniuri */
+  background: #ddd;  /* Fundal gri pentru întregul meniu afișat */
+}
+
+/*-------------------- Link-urile din meniu --------------------*/
+.menu-items li a {
+  background: transparent;   /* Fără fundal pentru link (moștenește fundalul elementului părinte) */
+  color: #000000;            /* Text negru */
+  padding: 5px;              /* Spațiere internă pentru link */
+  display: block;            /* Link-ul ocupă tot spațiul elementului de listă */
+  text-decoration: none;     /* Elimină sublinierea implicită */
 }
 
 /* Hero Section */
@@ -67,27 +103,6 @@ nav ul li a {
   border-radius: 5px;
 }
 
-/* Secțiunea "Despre Noi" */
-.despre,
-.meniu,
-.galerie,
-.rezervari {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-/* Galerie imagini */
-.grid-imagini {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.grid-imagini img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-}
 
 /* Footer */
 footer {

@@ -9,20 +9,28 @@
 </head>
 
 <body>
+    <section id="welcome">
+        <img src="simplu.jpg" alt="Delicious Italian Cuisine" class="welcome-image">
+    </section>
 
-    <header>
-        <nav>
-            <div class="logo">MENIU</div>
-            <ul>
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="rezervari.html">Rezervări</a></li>
-                <li><a href="contact.html">catering</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="contact.html">imprint</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <div class="navbar">
+        <button class="menu-toggle">☰ Navigation</button>
+        <ul class="menu-items">
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="meniu.html">Meniu</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="rezervari.html">Rezervari</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="despre.html">Despre</a></li>
+        </ul>
+    </div>
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".menu-items").classList.toggle("show");
+        });
+    </script>
 
     <section class="hero">
         <h2>MENIU RESTAURANT</h2>
@@ -53,7 +61,7 @@
    
 
     <footer>
-        <p>&copy; 2024 Papao. Toate drepturile rezervate.</p>
+        <p>&copy; 2025 D` Amici. Toate drepturile rezervate.</p>
     </footer>
 
 </body>
