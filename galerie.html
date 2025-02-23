@@ -8,40 +8,58 @@
     <link rel="stylesheet" href="galerie.css">
 </head>
 <body>
+    <section id="welcome">
+        <img src="simplu.jpg" alt="Delicious Italian Cuisine" class="welcome-image">
+    </section>
 
 
-     <header>
-         <nav>
-             <div class="logo">GALEIRE</div>
-             <ul>
-                 <li><a href="index.html">Acasă</a></li>
-                 <li><a href="meniu.html">Meniu</a></li>
-                 <li><a href="rezervari.html">Rezervări</a></li>
-                 <li><a href="contact.html">catering</a></li>
-                 <li><a href="contact.html">Contact</a></li>
-                 <li><a href="contact.html">imprint</a></li>
-             </ul>
-         </nav>
-     </header>
+    <div class="navbar">
+        <button class="menu-toggle">☰ Navigation</button>
+        <ul class="menu-items">
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="meniu.html">Meniu</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="rezervari.html">Rezervari</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="despre.html">Despre</a></li>
+        </ul>
+    </div>
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".menu-items").classList.toggle("show");
+        });
+    </script>
 
 
        <!-- Hero Section ceva adica binevenit -->
     <section class="hero">
-        <h1>-</h1>
+        <h1>pentru galerie cod de mai jos</h1>
         <p>-</p>
-        <p> ------------------------- </p>
+        <p> doar se ia din comment  </p>
         <!--<a href="meniu.html" class="btn">Vezi Meniul</a>-->
     </section>
 
-    <h1>Galerie</h1>
+    <!--<h1>Galerie</h1>
     <div class="galerie">
-        <img src="poze/poza1.jpg" alt="Interior restaurant" onclick="openLightbox(this)">
-        <img src="poze/poza2.jpg" alt="Fel de mâncare" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Interior restaurant" onclick="openLightbox(this)">
+        <img src="simplu.jpg" alt="Fel de mâncare" onclick="openLightbox(this)">
         <img src="poze/poza3.jpg" alt="Vin și pahare" onclick="openLightbox(this)">
         <img src="poze/poza4.jpg" alt="Desert delicios" onclick="openLightbox(this)">
         <img src="poze/poza5.jpg" alt="Terasa restaurantului" onclick="openLightbox(this)">
         <img src="poze/poza6.jpg" alt="Bucătăria restaurantului" onclick="openLightbox(this)">
-    </div>
+        <img src="ok.jpg" alt="Interior restaurant" onclick="openLightbox(this)">
+        <img src="simplu.jpg" alt="Fel de mâncare" onclick="openLightbox(this)">
+        <img src="poze/poza3.jpg" alt="Vin și pahare" onclick="openLightbox(this)">
+        <img src="poze/poza4.jpg" alt="Desert delicios" onclick="openLightbox(this)">
+        <img src="poze/poza5.jpg" alt="Terasa restaurantului" onclick="openLightbox(this)">
+        <img src="poze/poza6.jpg" alt="Bucătăria restaurantului" onclick="openLightbox(this)"><img src="ok.jpg" alt="Interior restaurant" onclick="openLightbox(this)">
+        <img src="simplu.jpg" alt="Fel de mâncare" onclick="openLightbox(this)">
+        <img src="poze/poza3.jpg" alt="Vin și pahare" onclick="openLightbox(this)">
+        <img src="poze/poza4.jpg" alt="Desert delicios" onclick="openLightbox(this)">
+        <img src="poze/poza5.jpg" alt="Terasa restaurantului" onclick="openLightbox(this)">
+        <img src="poze/poza6.jpg" alt="Bucătăria restaurantului" onclick="openLightbox(this)">
+    </div>-->
 
 <!-- Lightbox -->
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
@@ -58,6 +76,11 @@
         document.getElementById("lightbox").style.display = "none";
     }
 </script>
+
+
+<footer>
+    <p>&copy; 2025 D` Amici - Toate drepturile rezervate</p>
+</footer>
 
 </body>
 </html>
