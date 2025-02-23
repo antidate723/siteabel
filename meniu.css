@@ -1,0 +1,98 @@
+/* Resetare stiluri implicite */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: rgb(31, 25, 25);
+}
+
+/* Meniu de navigație */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: rgb(114, 30, 30);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero.jpg') no-repeat center center/cover;
+  color: rgb(155, 40, 40);
+  text-align: center;
+  padding: 200px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+/* Secțiunea "Despre Noi" */
+.despre,
+.meniu,
+.galerie,
+.rezervari {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Galerie imagini */
+.grid-imagini {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid-imagini img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: rgb(182, 67, 67);
+  text-align: center;
+  padding: 20px;
+}
