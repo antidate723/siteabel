@@ -162,3 +162,14 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
