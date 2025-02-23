@@ -110,4 +110,6 @@ footer {
   color: rgb(182, 67, 67);
   text-align: center;
   padding: 20px;
+  font-family: "Times New Roman", Times, serif;  /* Font clasic */
+  font-style: italic;  
 }

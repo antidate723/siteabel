@@ -2,30 +2,37 @@
 <html>
 
 <head>
-    <title>Page Title</title>
-    <link rel="stylesheet" href="acasa.css">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="despre.css">
 </head>
 
 <body>
+    <section id="welcome">
+        <img src="simplu.jpg" alt="Delicious Italian Cuisine" class="welcome-image">
+    </section>
 
 
-    <header>
-        <nav>
-            <div class="logo">ACASA</div>
-            <ul>
-                <li><a href="meniu.html">Meniu</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="rezervari.html">Rezervări</a></li>
-                <li><a href="contact.html">catering</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="contact.html">imprint</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="navbar">
+        <button class="menu-toggle">☰ Navigation</button>
+        <ul class="menu-items">
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="meniu.html">Meniu</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="rezervari.html">Rezervari</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="despre.html">Despre</a></li>
+        </ul>
+    </div>
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".menu-items").classList.toggle("show");
+        });
+    </script>
 
-
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+<footer>
+    <p>&copy; 2025 D` Amici - Toate drepturile rezervate</p>
+</footer>
 
 </body>
 
