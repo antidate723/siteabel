@@ -23,7 +23,7 @@ body {
     padding: 0;
     margin: 0;
     display: none;
-    background: #ffffff;
+    background: transparent;
     position: relative;
     width: 100%;
     box-shadow: none;
@@ -32,13 +32,27 @@ body {
 .menu-items li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    
 }
 .menu-items li:hover {
-    background: #ffffff;
+    background: #f0f0f0;
+    
 }
 .menu-items.show {
     display: block;
+    background: #ddd;
+
 }
+.menu-items li a {
+    background: transparent; /* Fără fundal pe link */
+    color: #000000; /* Text negru */
+    padding: 5px; /* Distanță între text și margini */
+    display: block; /* Asigură-te că link-ul ocupă tot spațiul în element */
+    text-decoration: none; /* Elimină sublinierea link-ului */
+}
+
 
 /*------------------------------------------------------------------------------*/
 .welcome-image {
