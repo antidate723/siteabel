@@ -11,13 +11,7 @@
 
 /*-------------------- Resetare stiluri implicite --------------------*/
 /* Această regulă se aplică tuturor elementelor pentru a elimina marginile și padding-ul implicite și pentru a seta un box-sizing consistent */
-* {
-  margin: 0;               /* Elimină marginile implicite */
-  padding: 0;              /* Elimină padding-ul implicit */
-  box-sizing: border-box;  /* Include padding-ul și border-ul în calculul lățimii elementului */
-  font-family: Arial, sans-serif;  /* Setează fontul implicit */
-  background: rgb(236, 204, 24); /* Fundal implicit negru (poți modifica ulterior dacă dorești) */
-}
+
 
 /*-------------------- Stilizare pentru body --------------------*/
 /* Setează stilurile de bază pentru pagina */
@@ -91,7 +85,7 @@ body {
 /*-------------------- Footer --------------------*/
 /* Stilizarea subsolului paginii */
 footer {
-  background-color: #000000;     /* Fundal gri închis */
+  background-color: #ffffff;     /* Fundal gri închis */
   color: rgb(182, 67, 67);      /* Culoare text specifică */
   text-align: center;         /* Text centrat */
   padding: 20px;              /* Spațiere internă */
@@ -145,7 +139,7 @@ iframe {
 /*PENRRU ORAR*/
 
 .orar {
-  width: 80%;
+  width: 100vw;
   margin: 20px auto;
   text-align: center;
   padding: 20px;
@@ -211,6 +205,7 @@ td {
 @media (max-width: 768px) {
   .map-container {
     max-width: 90%; /* Ajustare pentru a ocupa aproape toată lățimea */
+
   }
 
   .orar {
