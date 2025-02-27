@@ -1,49 +1,47 @@
 function verificaStatus() {
-    let acum = new Date();
-    let ziua = acum.getDay(); // 0 = Duminică, 1 = Luni, ..., 6 = Sâmbătă
-    let ora = acum.getHours();
-    let minute = acum.getMinutes();
+    // Folosim un formatter pentru ora Germaniei (Europe/Berlin)
+    let formatData = new Intl.DateTimeFormat("en-US", {
+        timeZone: "Europe/Berlin",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hourCycle: "h23"
+    });
+
+    let dataCurenta = new Date();
+    let [ora, minute] = formatData.format(dataCurenta).split(":").map(Number);
+
+    let ziua = new Intl.DateTimeFormat("en-US", { timeZone: "Europe/Berlin", weekday: "short" })
+        .format(dataCurenta)
+        .toLowerCase();
+
     let status = document.getElementById("status");
+    if (!status) return console.error("Elementul cu id 'status' nu există!");
 
-    if (!status) {
-        console.error("Elementul cu id 'status' nu există!");
-        return;
-    }
-
-    // Definirea programului
+    // Program optimizat cu chei string (în loc de numere)
     const orar = {
-        0: [[11, 30, 23, 30]], // Duminică
-        1: [[11, 30, 14, 30], [17, 30, 23, 30]], // Luni
-        2: [[11, 30, 14, 30], [17, 30, 23, 30]], // Marți
-        3: [[11, 30, 14, 30], [17, 30, 23, 30]], // Miercuri
-        4: [], // Joi - Închis
-        5: [[11, 30, 14, 30], [17, 30, 23, 30]], // Vineri
-        6: [[17, 0, 23, 30]]  // Sâmbătă
+        sun: [[17, 0, 22, 0]], // Duminică
+        mon: [[12, 0, 22, 0]], // Luni
+        tue: [[12, 0, 22, 0]], // Marți
+        wed: [[12, 0, 22, 0]], // Miercuri
+        thu: [[12, 0, 22, 0]], // Joi - Închis
+        fri: [[12, 0, 22, 0]], // Vineri
+        sat: [[12, 0, 22, 0]], // Sâmbătă
     };
 
-    let deschis = false;
+    let deschis = orar[ziua]?.some(([startH, startM, endH, endM]) => {
+        let start = startH * 60 + startM;
+        let end = endH * 60 + endM;
+        let current = ora * 60 + minute;
+        return current >= start && current <= end;
+    }) ?? false;
 
-    if (orar[ziua].length > 0) {
-        for (let interval of orar[ziua]) {
-            let [startH, startM, endH, endM] = interval;
-
-            let start = startH * 60 + startM;
-            let end = endH * 60 + endM;
-            let current = ora * 60 + minute;
-
-            if (current >= start && current <= end) {
-                deschis = true;
-                break;
-            }
-        }
-    }
-
-    status.innerHTML = deschis ? "✅ Acum deschis" : "❌ Închis";
+    status.innerHTML = deschis ? "✅ Jetzt öffnen" : "❌ Jetzt geschlossen";
     status.style.color = deschis ? "green" : "red";
 }
 
 // Rulează verificarea imediat
 verificaStatus();
 
-// Actualizare la fiecare minut
-setInterval(verificaStatus, 60000);
+// Actualizare mai rapidă (la fiecare 1 secundă)
+setInterval(verificaStatus, 1000);
