@@ -6,7 +6,7 @@
     padding: 0;              /* Elimină padding-ul implicit */
     box-sizing: border-box;  /* Include padding-ul și border-ul în calculul lățimii elementului */
     font-family: Arial, sans-serif;  /* Setează fontul implicit */
-    background: rgb(0, 0, 0); /* Fundal implicit negru (poți modifica ulterior dacă dorești) */
+    background: rgb(255, 0, 0); /* Fundal implicit negru (poți modifica ulterior dacă dorești) */
 }
 
 /*-------------------- Stilizare pentru body --------------------*/
@@ -59,7 +59,7 @@ body {
 
 /* La trecerea mouse-ului peste un element de meniu, se schimbă fundalul */
 .menu-items li:hover {
-    background: #f0f0f0;             /* Fundal gri deschis la hover */
+    background: #ffffff;             /* Fundal gri deschis la hover */
 }
 
 /*-------------------- Meniul afișat (când se adaugă clasa 'show') --------------------*/
