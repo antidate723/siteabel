@@ -16,7 +16,7 @@
   padding: 0;              /* Elimină padding-ul implicit */
   box-sizing: border-box;  /* Include padding-ul și border-ul în calculul lățimii elementului */
   font-family: Arial, sans-serif;  /* Setează fontul implicit */
-  background: rgb(0, 0, 0); /* Fundal implicit negru (poți modifica ulterior dacă dorești) */
+  background: rgb(199, 172, 172); /* Fundal implicit negru (poți modifica ulterior dacă dorești) */
 }
 
 /*-------------------- Stilizare pentru body --------------------*/
