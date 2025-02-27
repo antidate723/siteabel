@@ -1,14 +1,13 @@
 
 /* Stilizarea imaginii din secțiunea de bun venit */
+/* Stilizarea imaginii din secțiunea de bun venit */
 .welcome-image {
-  width: 100%;           /* Imaginea se întinde pe 100% din container (responsive) */
-  max-width: 600px;      /* Lățime maximă de 600px */
-  /*height: ;*/         /* Înălțimea nu este specificată, astfel încât se păstrează raportul original */
-  display: block;        /* Afișare ca element bloc */
-  margin: 0px auto;      /* Centrează imaginea orizontal */
-  /*align-items: center;*/ /* Comentariu: proprietate nefolosită aici */
+  width: 100vw;         /* Ocupă toată lățimea ecranului */
+  max-width: 100%;      /* Se asigură că nu depășește containerul */
+  height: 500px /*auto*/;         /* Păstrează proporțiile */
+  object-fit: cover;    /* Evită distorsiuni */
+  display: block;       /* Elimină spațiile goale sub imagine */
 }
-
 /*-------------------- Resetare stiluri implicite --------------------*/
 /* Această regulă se aplică tuturor elementelor pentru a elimina marginile și padding-ul implicite și pentru a seta un box-sizing consistent */
 * {

@@ -40,7 +40,7 @@
     cursor: pointer;        /* Schimbă cursorul la pointer pentru a indica interactivitate */
     font-size: 24px;        /* Mărimea fontului pentru buton */
     border: none;           /* Fără bordură */
-    background: #ffffff;     /* Fundal alb */
+    background: #5f3030;     /* Fundal alb */
     display: block;         /* Afișează ca element bloc */
     margin: auto;           /* Centrează pe orizontală */
   }
@@ -61,26 +61,26 @@
   /*-------------------- Elementele individuale din meniu --------------------*/
   .menu-items li {
     padding: 10px;                   /* Spațiere internă pentru fiecare element */
-    border-bottom: 1px solid #ddd;   /* Linie de separare între elemente */
-    background: #ffffff;             /* Fundal alb pentru fiecare element */
+    border-bottom: 1px solid #b82727;   /* Linie de separare între elemente */
+    background: #c01010;             /* Fundal alb pentru fiecare element */
     color: rgb(0, 0, 0);              /* Text negru */
   }
   
   /* La trecerea mouse-ului peste un element de meniu, se schimbă fundalul */
   .menu-items li:hover {
-    background: #f0f0f0;             /* Fundal gri deschis la hover */
+    background: #b32323;             /* Fundal gri deschis la hover */
   }
   
   /*-------------------- Meniul afișat (când se adaugă clasa 'show') --------------------*/
   .menu-items.show {
     display: block;    /* Afișează lista de meniuri */
-    background: #ddd;  /* Fundal gri pentru întregul meniu afișat */
+    background: #af2222;  /* Fundal gri pentru întregul meniu afișat */
   }
   
   /*-------------------- Link-urile din meniu --------------------*/
   .menu-items li a {
     background: transparent;   /* Fără fundal pentru link (moștenește fundalul elementului părinte) */
-    color: #000000;            /* Text negru */
+    color: #ff0000;            /* Text negru */
     padding: 5px;              /* Spațiere internă pentru link */
     display: block;            /* Link-ul ocupă tot spațiul elementului de listă */
     text-decoration: none;     /* Elimină sublinierea implicită */
