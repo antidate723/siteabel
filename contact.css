@@ -1,4 +1,21 @@
 
+.hero p {
+  font-size: 24px;            /* Dimensiune font pentru paragrafe */
+  margin-bottom: 20px;        /* Spațiere sub paragrafe */
+}
+
+
+.hero {
+  background: url('hero.jpg') no-repeat center center/cover; /* Imagine de fundal, centrată și acoperind complet zona */
+  color: rgb(0, 0, 0);      /* Culoarea textului din secțiune */
+  text-align: center;         /* Text centrat */
+  padding: 100px 10px;         /* Spațiere mare pentru a crea un impact vizual */
+}
+
+
+
+
+
 /* Stilizarea imaginii din secțiunea de bun venit */
 .welcome-image {
   width: 100vw;         /* Ocupă toată lățimea ecranului */
@@ -18,72 +35,27 @@ body {
 }
 
  
-
-
-/*-------------------- Bara de navigare (navbar) --------------------*/
-.navbar {
-  background-color: #ffffff;  /* Fundal alb pentru bara de navigare */
-  padding: 10px;              /* Spațiere internă */
-  box-shadow: 0 4px 6px rgba(255, 0, 0, 0); /* Umbra; aici nu are efect deoarece alpha e 0 */
-  position: block;            /* Tip de poziționare; de obicei se folosește 'relative' sau 'fixed', dar aici este 'block' */
+.navbar-nav ms-auto {
+  text-align: center;
+  align-items: center;
 }
 
-/*-------------------- Butonul de toggle pentru meniu --------------------*/
-.menu-toggle {
-  cursor: pointer;        /* Schimbă cursorul la pointer pentru a indica interactivitate */
-  font-size: 24px;        /* Mărimea fontului pentru buton */
-  border: none;           /* Fără bordură */
-  background: #ffffff;     /* Fundal alb */
-  display: block;         /* Afișează ca element bloc */
-  margin: auto;           /* Centrează pe orizontală */
+.collapse navbar-collapse {
+  text-align: center;
+  align-items: center;
 }
 
-/*-------------------- Lista de meniuri (menu-items) --------------------*/
-.menu-items {
-  list-style: none;       /* Elimină marcajele implicite ale listei */
-  padding: 0;             /* Fără padding */
-  margin: 0;              /* Fără margin */
-  display: none;          /* Ascunsă inițial (va fi afișată la click) */
-  background: transparent; /* Fundal transparent */
-  position: relative;     /* Poziționare relativă */
-  width: 100%;            /* Lățime completă */
-  box-shadow: none;       /* Fără umbră */
-  /*box-shadow: 0 0px 0px rgba(255, 255, 255, 0);*/  /* Alternativ: o altă setare de umbră, momentan comentată */
-}
+.navbar navbar-expand-lg navbar-light bg-light{
+  text-align: center;
+  align-items: center;
 
-/*-------------------- Elementele individuale din meniu --------------------*/
-.menu-items li {
-  padding: 10px;                   /* Spațiere internă pentru fiecare element */
-  border-bottom: 1px solid #ddd;   /* Linie de separare între elemente */
-  background: #ffffff;             /* Fundal alb pentru fiecare element */
-  color: rgb(0, 0, 0);              /* Text negru */
-}
-
-/* La trecerea mouse-ului peste un element de meniu, se schimbă fundalul */
-.menu-items li:hover {
-  background: #f0f0f0;             /* Fundal gri deschis la hover */
-}
-
-/*-------------------- Meniul afișat (când se adaugă clasa 'show') --------------------*/
-.menu-items.show {
-  display: block;    /* Afișează lista de meniuri */
-  background: #ddd;  /* Fundal gri pentru întregul meniu afișat */
-}
-
-/*-------------------- Link-urile din meniu --------------------*/
-.menu-items li a {
-  background: transparent;   /* Fără fundal pentru link (moștenește fundalul elementului părinte) */
-  color: #000000;            /* Text negru */
-  padding: 5px;              /* Spațiere internă pentru link */
-  display: block;            /* Link-ul ocupă tot spațiul elementului de listă */
-  text-decoration: none;     /* Elimină sublinierea implicită */
 }
 
 
-
-
-
-
+.navbar-toggler{
+   text-align: center;
+  align-items: center;
+}
 
 
 
@@ -91,7 +63,7 @@ body {
 /*-------------------- Footer --------------------*/
 /* Stilizarea subsolului paginii */
 footer {
-  color: rgb(182, 67, 67);      /* Culoare text specifică */
+  color: rgb(255, 174, 0);      /* Culoare text specifică */
   text-align: center;         /* Text centrat */
   padding: 20px;              /* Spațiere internă */
   font-family: "Times New Roman", Times, serif;  /* Font clasic */
@@ -224,7 +196,8 @@ td {
 @media (max-width: 768px) {
   .map-container {
     max-width: 90%; /* Ajustare pentru a ocupa aproape toată lățimea */
-
+    height: 400px;
+    margin-left: 50px;
   }
 
   .orar {

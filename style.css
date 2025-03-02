@@ -1,13 +1,7 @@
 
 /*-------------------- Resetare stiluri implicite --------------------*/
 /* Această regulă se aplică tuturor elementelor pentru a elimina marginile și padding-ul implicite și pentru a seta un box-sizing consistent */
-* {
-    margin: 0;               /* Elimină marginile implicite */
-    padding: 0;              /* Elimină padding-ul implicit */
-    box-sizing: border-box;  /* Include padding-ul și border-ul în calculul lățimii elementului */
-    font-family: Arial, sans-serif;  /* Setează fontul implicit */
-    background: rgb(255, 0, 0); /* Fundal implicit negru (poți modifica ulterior dacă dorești) */
-}
+
 
 /*-------------------- Stilizare pentru body --------------------*/
 /* Setează stilurile de bază pentru pagina */
@@ -16,14 +10,14 @@ body {
     margin: 0;      /* Fără margini implicite */
     padding: 0;     /* Fără padding */
     text-align: center;  /* Centrează textul în pagină */
-    background-color: #000000;
+    background-color: #00e1ff;
 }
 
 /*-------------------- Bara de navigare (navbar) --------------------*/
 .navbar {
-    background-color: #000000;  /* Fundal alb pentru bara de navigare */
+    background-color: #758aff;  /* Fundal alb pentru bara de navigare */
     padding: 10px;              /* Spațiere internă */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0); /* Umbra; aici nu are efect deoarece alpha e 0 */
+    box-shadow: 0 4px 6px rgb(50, 7, 206); /* Umbra; aici nu are efect deoarece alpha e 0 */
     position: block;            /* Tip de poziționare; de obicei se folosește 'relative' sau 'fixed', dar aici este 'block' */
 }
 
@@ -32,7 +26,7 @@ body {
     cursor: pointer;        /* Schimbă cursorul la pointer pentru a indica interactivitate */
     font-size: 24px;        /* Mărimea fontului pentru buton */
     border: none;           /* Fără bordură */
-    background: #000000;     /* Fundal alb */
+    background: #ff00dd;     /* Fundal alb */
     display: block;         /* Afișează ca element bloc */
     margin: auto;           /* Centrează pe orizontală */
 }
@@ -53,26 +47,26 @@ body {
 /*-------------------- Elementele individuale din meniu --------------------*/
 .menu-items li {
     padding: 10px;                   /* Spațiere internă pentru fiecare element */
-    border-bottom: 1px solid #000000;   /* Linie de separare între elemente */
-    background: #000000;             /* Fundal alb pentru fiecare element */
-    color: rgb(0, 0, 0);              /* Text negru */
+    border-bottom: 1px solid #2af701;   /* Linie de separare între elemente */
+    background: #ff06d5;             /* Fundal alb pentru fiecare element */
+    color: rgb(41, 206, 35);              /* Text negru */
 }
 
 /* La trecerea mouse-ului peste un element de meniu, se schimbă fundalul */
 .menu-items li:hover {
-    background: #000000;             /* Fundal gri deschis la hover */
+    background: #310499;             /* Fundal gri deschis la hover */
 }
 
 /*-------------------- Meniul afișat (când se adaugă clasa 'show') --------------------*/
 .menu-items.show {
     display: block;    /* Afișează lista de meniuri */
-    background: #000000;  /* Fundal gri pentru întregul meniu afișat */
+    background: #4c0f9b;  /* Fundal gri pentru întregul meniu afișat */
 }
 
 /*-------------------- Link-urile din meniu --------------------*/
 .menu-items li a {
     background: transparent;   /* Fără fundal pentru link (moștenește fundalul elementului părinte) */
-    color: #000000;            /* Text negru */
+    color: #4400ff;            /* Text negru */
     padding: 5px;              /* Spațiere internă pentru link */
     display: block;            /* Link-ul ocupă tot spațiul elementului de listă */
     text-decoration: none;     /* Elimină sublinierea implicită */
@@ -92,8 +86,8 @@ body {
 /*-------------------- Header-ul și navigația de sus --------------------*/
 /* Header fixat în partea de sus a paginii */
 header {
-    background-color: #333;  /* Fundal gri închis */
-    color: rgb(0, 0, 0);            /* Text alb */
+    background-color: #000000;  /* Fundal gri închis */
+    color: rgb(89, 0, 255);            /* Text alb */
     padding: 15px 0;         /* Spațiere verticală de 15px */
     position: fixed;         /* Fixat la partea de sus */
     width: 100%;             /* Ocupă întreaga lățime */
@@ -123,7 +117,7 @@ nav ul li {
 
 /* Link-urile din navigație */
 nav ul li a {
-    color: rgb(114, 30, 30);       /* Culoare personalizată pentru text */
+    color: rgb(0, 0, 0);       /* Culoare personalizată pentru text */
     text-decoration: none;        /* Fără subliniere */
     font-size: 18px;              /* Dimensiune font */
 }
@@ -132,7 +126,7 @@ nav ul li a {
 /* Secțiunea cu imagine de fundal și text de întâmpinare */
 .hero {
     background: url('hero.jpg') no-repeat center center/cover; /* Imagine de fundal, centrată și acoperind complet zona */
-    color: rgb(155, 40, 40);      /* Culoarea textului din secțiune */
+    color: rgb(0, 0, 0);      /* Culoarea textului din secțiune */
     text-align: center;         /* Text centrat */
     padding: 100px 10px;         /* Spațiere mare pentru a crea un impact vizual */
 }
@@ -168,7 +162,7 @@ nav ul li a {
 /* Stilizarea subsolului paginii */
 footer {
     background-color: #333;     /* Fundal gri închis */
-    color: rgb(182, 67, 67);      /* Culoare text specifică */
+    color: rgb(255, 255, 255);      /* Culoare text specifică */
     text-align: center;         /* Text centrat */
     padding: 20px;              /* Spațiere internă */
 }
