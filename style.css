@@ -28,7 +28,7 @@ body {
     border: none;           /* Fără bordură */
     background: #ff00dd;     /* Fundal alb */
     display: block;         /* Afișează ca element bloc */
-    margin: auto;           /* Centrează pe orizontală */
+    /*margin: auto;*/           /* Centrează pe orizontală */
 }
 
 /*-------------------- Lista de meniuri (menu-items) --------------------*/
