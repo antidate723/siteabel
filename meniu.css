@@ -9,7 +9,7 @@ body {
     margin: 0;      /* Fără margini implicite */
     padding: 0;     /* Fără padding */
     text-align: center;  /* Centrează textul în pagină */
-    background-color: #00e1ff;
+    background-color: d3d3d3;
 }
 
 /*-------------------- Bara de navigare (navbar) --------------------*/
