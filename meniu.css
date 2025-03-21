@@ -123,3 +123,28 @@ footer {
   font-family: "Times New Roman", Times, serif;  /* Font clasic */
   font-style: italic;  
 }
+nav {
+  display: flex;                /* Folosește flexbox pentru aranjare */
+  justify-content: space-between;  /* Spațiere egală între elemente */
+  align-items: center;          /* Elemente centrate vertical */
+  width: 80%;                   /* Lățime de 80% din container */
+  margin: auto;                 /* Centrează containerul pe orizontală */
+}
+
+/* Lista din navigație */
+nav ul {
+  list-style: none;             /* Elimină marcajele implicite */
+  display: flex;                /* Afișare flex pentru elementele listei */
+}
+
+/* Elementele individuale din lista de navigație */
+nav ul li {
+  margin-left: 20px;            /* Spațiere între elemente */
+}
+
+/* Link-urile din navigație */
+nav ul li a {
+  color: rgb(255, 0, 0);       /* Culoare personalizată pentru text */
+  text-decoration: none;        /* Fără subliniere */
+  font-size: 18px;              /* Dimensiune font */
+}
