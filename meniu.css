@@ -1,121 +1,166 @@
-
-/* Stilizarea imaginii din secțiunea de bun venit */
-/* Stilizarea imaginii din secțiunea de bun venit */
-.welcome-image {
-  width: 100vw;         /* Ocupă toată lățimea ecranului */
-  max-width: 100%;      /* Se asigură că nu depășește containerul */
-  height: 500px /*auto*/;         /* Păstrează proporțiile */
-  object-fit: cover;    /* Evită distorsiuni */
-  display: block;       /* Elimină spațiile goale sub imagine */
-}
-
 /*-------------------- Resetare stiluri implicite --------------------*/
 /* Această regulă se aplică tuturor elementelor pentru a elimina marginile și padding-ul implicite și pentru a seta un box-sizing consistent */
-* {
-  margin: 0;               /* Elimină marginile implicite */
-  padding: 0;              /* Elimină padding-ul implicit */
-  box-sizing: border-box;  /* Include padding-ul și border-ul în calculul lățimii elementului */
-  font-family: Arial, sans-serif;  /* Setează fontul implicit */
-  background: rgb(0, 0, 0); /* Fundal implicit negru (poți modifica ulterior dacă dorești) */
-}
+
 
 /*-------------------- Stilizare pentru body --------------------*/
 /* Setează stilurile de bază pentru pagina */
 body {
-  font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
-  margin: 0;      /* Fără margini implicite */
-  padding: 0;     /* Fără padding */
-  text-align: center;  /* Centrează textul în pagină */
+    font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
+    margin: 0;      /* Fără margini implicite */
+    padding: 0;     /* Fără padding */
+    text-align: center;  /* Centrează textul în pagină */
+    background-color: d3d3d3;
 }
 
 /*-------------------- Bara de navigare (navbar) --------------------*/
 .navbar {
-  background-color: #ffffff;  /* Fundal alb pentru bara de navigare */
-  padding: 10px;              /* Spațiere internă */
-  box-shadow: 0 4px 6px rgba(255, 0, 0, 0); /* Umbra; aici nu are efect deoarece alpha e 0 */
-  position: block;            /* Tip de poziționare; de obicei se folosește 'relative' sau 'fixed', dar aici este 'block' */
+    background-color: #758aff;  /* Fundal alb pentru bara de navigare */
+    padding: 10px;              /* Spațiere internă */
+    box-shadow: 0 4px 6px rgb(50, 7, 206); /* Umbra; aici nu are efect deoarece alpha e 0 */
+    position: block;            /* Tip de poziționare; de obicei se folosește 'relative' sau 'fixed', dar aici este 'block' */
 }
 
 /*-------------------- Butonul de toggle pentru meniu --------------------*/
 .menu-toggle {
-  cursor: pointer;        /* Schimbă cursorul la pointer pentru a indica interactivitate */
-  font-size: 24px;        /* Mărimea fontului pentru buton */
-  border: none;           /* Fără bordură */
-  background: #ffffff;     /* Fundal alb */
-  display: block;         /* Afișează ca element bloc */
-  margin: auto;           /* Centrează pe orizontală */
+    cursor: pointer;        /* Schimbă cursorul la pointer pentru a indica interactivitate */
+    font-size: 24px;        /* Mărimea fontului pentru buton */
+    border: none;           /* Fără bordură */
+    background: #ff00dd;     /* Fundal alb */
+    display: block;         /* Afișează ca element bloc */
+    margin: auto;           /* Centrează pe orizontală */
 }
 
 /*-------------------- Lista de meniuri (menu-items) --------------------*/
 .menu-items {
-  list-style: none;       /* Elimină marcajele implicite ale listei */
-  padding: 0;             /* Fără padding */
-  margin: 0;              /* Fără margin */
-  display: none;          /* Ascunsă inițial (va fi afișată la click) */
-  background: transparent; /* Fundal transparent */
-  position: relative;     /* Poziționare relativă */
-  width: 100%;            /* Lățime completă */
-  box-shadow: none;       /* Fără umbră */
-  /*box-shadow: 0 0px 0px rgba(255, 255, 255, 0);*/  /* Alternativ: o altă setare de umbră, momentan comentată */
+    list-style: none;       /* Elimină marcajele implicite ale listei */
+    padding: 0;             /* Fără padding */
+    margin: 0;              /* Fără margin */
+    display: none;          /* Ascunsă inițial (va fi afișată la click) */
+    background: transparent; /* Fundal transparent */
+    position: relative;     /* Poziționare relativă */
+    width: 100%;            /* Lățime completă */
+    box-shadow: none;       /* Fără umbră */
+    /*box-shadow: 0 0px 0px rgba(255, 255, 255, 0);*/  /* Alternativ: o altă setare de umbră, momentan comentată */
 }
 
 /*-------------------- Elementele individuale din meniu --------------------*/
 .menu-items li {
-  padding: 10px;                   /* Spațiere internă pentru fiecare element */
-  border-bottom: 1px solid #ddd;   /* Linie de separare între elemente */
-  background: #ffffff;             /* Fundal alb pentru fiecare element */
-  color: rgb(0, 0, 0);              /* Text negru */
+    padding: 10px;                   /* Spațiere internă pentru fiecare element */
+    border-bottom: 1px solid #2af701;   /* Linie de separare între elemente */
+    background: #ff06d5;             /* Fundal alb pentru fiecare element */
+    color: rgb(41, 206, 35);              /* Text negru */
 }
 
 /* La trecerea mouse-ului peste un element de meniu, se schimbă fundalul */
 .menu-items li:hover {
-  background: #f0f0f0;             /* Fundal gri deschis la hover */
+    background: #310499;             /* Fundal gri deschis la hover */
 }
 
 /*-------------------- Meniul afișat (când se adaugă clasa 'show') --------------------*/
 .menu-items.show {
-  display: block;    /* Afișează lista de meniuri */
-  background: #ddd;  /* Fundal gri pentru întregul meniu afișat */
+    display: block;    /* Afișează lista de meniuri */
+    background: #4c0f9b;  /* Fundal gri pentru întregul meniu afișat */
 }
 
 /*-------------------- Link-urile din meniu --------------------*/
 .menu-items li a {
-  background: transparent;   /* Fără fundal pentru link (moștenește fundalul elementului părinte) */
-  color: #000000;            /* Text negru */
-  padding: 5px;              /* Spațiere internă pentru link */
-  display: block;            /* Link-ul ocupă tot spațiul elementului de listă */
-  text-decoration: none;     /* Elimină sublinierea implicită */
+    background: transparent;   /* Fără fundal pentru link (moștenește fundalul elementului părinte) */
+    color: #4400ff;            /* Text negru */
+    padding: 5px;              /* Spațiere internă pentru link */
+    display: block;            /* Link-ul ocupă tot spațiul elementului de listă */
+    text-decoration: none;     /* Elimină sublinierea implicită */
 }
 
-/* Hero Section */
+/*-------------------- Imaginea de bun venit --------------------*/
+/* Stilizarea imaginii din secțiunea de bun venit */
+.welcome-image {
+    width: 100%;           /* Imaginea se întinde pe 100% din container (responsive) */
+    max-width: 600px;      /* Lățime maximă de 600px */
+    /*height: ;*/         /* Înălțimea nu este specificată, astfel încât se păstrează raportul original */
+    display: block;        /* Afișare ca element bloc */
+    margin: 0px auto;      /* Centrează imaginea orizontal */
+    /*align-items: center;*/ /* Comentariu: proprietate nefolosită aici */
+}
+
+/*-------------------- Header-ul și navigația de sus --------------------*/
+/* Header fixat în partea de sus a paginii */
+header {
+    background-color: #000000;  /* Fundal gri închis */
+    color: rgb(89, 0, 255);            /* Text alb */
+    padding: 15px 0;         /* Spațiere verticală de 15px */
+    position: fixed;         /* Fixat la partea de sus */
+    width: 100%;             /* Ocupă întreaga lățime */
+    top: 0;                  /* Poziționat la marginea de sus */
+    z-index: 1000;           /* Se asigură că este deasupra altor elemente */
+}
+
+/* Containerele de navigație */
+nav {
+    display: flex;                /* Folosește flexbox pentru aranjare */
+    justify-content: space-between;  /* Spațiere egală între elemente */
+    align-items: center;          /* Elemente centrate vertical */
+    width: 80%;                   /* Lățime de 80% din container */
+    margin: auto;                 /* Centrează containerul pe orizontală */
+}
+
+/* Lista din navigație */
+nav ul {
+    list-style: none;             /* Elimină marcajele implicite */
+    display: flex;                /* Afișare flex pentru elementele listei */
+}
+
+/* Elementele individuale din lista de navigație */
+nav ul li {
+    margin-left: 20px;            /* Spațiere între elemente */
+}
+
+/* Link-urile din navigație */
+nav ul li a {
+    color: rgb(0, 0, 0);       /* Culoare personalizată pentru text */
+    text-decoration: none;        /* Fără subliniere */
+    font-size: 18px;              /* Dimensiune font */
+}
+
+/*-------------------- Secțiunea Hero (Bine ai venit) --------------------*/
+/* Secțiunea cu imagine de fundal și text de întâmpinare */
 .hero {
-  background: url('hero.jpg') no-repeat center center/cover;
-  color: rgb(155, 40, 40);
-  text-align: center;
-  padding: 200px 20px;
+    background: url('hero.jpg') no-repeat center center/cover; /* Imagine de fundal, centrată și acoperind complet zona */
+    color: rgb(0, 0, 0);      /* Culoarea textului din secțiune */
+    text-align: center;         /* Text centrat */
+    padding: 100px 10px;         /* Spațiere mare pentru a crea un impact vizual */
 }
 
+/* Titlul din secțiunea Hero */
 .hero h1 {
-  font-size: 48px;
+    font-size: 48px;            /* Dimensiune mare pentru titlu */
 }
 
+/* Paragrafele din secțiunea Hero */
 .hero p {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.btn {
-  background: #ff6600;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 5px;
+    font-size: 24px;            /* Dimensiune font pentru paragrafe */
+    margin-bottom: 20px;        /* Spațiere sub paragrafe */
 }
 
 
-/* Footer */
+/*-------------------- Galerie de imagini --------------------*/
+/* Containerul pentru imaginile din galerie */
+.grid-imagini {
+    display: flex;              /* Folosește flexbox pentru aranjare */
+    justify-content: center;    /* Centrează imaginile */
+    gap: 10px;                  /* Spațiere între imagini */
+}
+
+/* Stilizare pentru fiecare imagine din galerie */
+.grid-imagini img {
+    width: 200px;               /* Lățime fixă pentru imagini */
+    height: auto;               /* Înălțime automată pentru a păstra raportul */
+    border-radius: 10px;        /* Colțuri rotunjite */
+}
+
+/*-------------------- Footer --------------------*/
+/* Stilizarea subsolului paginii */
 footer {
+<<<<<<< HEAD
   background-color: #333;
   color: rgb(182, 67, 67);
   text-align: center;
@@ -147,4 +192,23 @@ nav ul li a {
   color: rgb(255, 0, 0);       /* Culoare personalizată pentru text */
   text-decoration: none;        /* Fără subliniere */
   font-size: 18px;              /* Dimensiune font */
+=======
+    background-color: #333;     /* Fundal gri închis */
+    color: rgb(255, 255, 255);      /* Culoare text specifică */
+    text-align: center;         /* Text centrat */
+    padding: 20px;              /* Spațiere internă */
+}
+
+/*-------------------- Stiluri pentru titluri și paragrafe speciale --------------------*/
+/* Titlurile h1 folosesc un font clasic și stil italic */
+h1 {
+    font-family: "Times New Roman", Times, serif;  /* Font clasic */
+    font-style: italic;                              /* Stil italic */
+}
+
+/* Paragrafele p folosesc același font clasic și stil italic */
+p {
+    font-family: "Times New Roman", Times, serif;  /* Font clasic */
+    font-style: italic;                              /* Stil italic */
+>>>>>>> 56dd04a80e433a1a4c4409c45c2226c465f7e801
 }
