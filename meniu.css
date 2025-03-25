@@ -15,7 +15,7 @@ body {
 /*-------------------- Bara de navigare (navbar) --------------------*/
 .navbar {
     background-color: #758aff;  /* Fundal alb pentru bara de navigare */
-    padding: 10px;              /* Spațiere internă */
+    padding: 11px;              /* Spațiere internă */
     box-shadow: 0 4px 6px rgb(50, 7, 206); /* Umbra; aici nu are efect deoarece alpha e 0 */
     position: block;            /* Tip de poziționare; de obicei se folosește 'relative' sau 'fixed', dar aici este 'block' */
 }

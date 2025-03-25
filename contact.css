@@ -200,7 +200,7 @@ td {
     /*max-width: auto;     /* Lățime maximă */
     height: 400px;        /* Pătrată */
     margin: 100px ;    /* Centrat */
-    border-radius: 10px;
+    border-radius: 11px;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     margin-left: 40px;

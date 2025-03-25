@@ -76,7 +76,7 @@ body {
 /* Stilizarea imaginii din secțiunea de bun venit */
 .welcome-image {
   width: 100%;           /* Imaginea se întinde pe 100% din container (responsive) */
-  max-width: 600px;      /* Lățime maximă de 600px */
+  max-width: 601px;      /* Lățime maximă de 600px */
   /*height: ;*/         /* Înălțimea nu este specificată, astfel încât se păstrează raportul original */
   display: block;        /* Afișare ca element bloc */
   margin: 0px auto;      /* Centrează imaginea orizontal */
