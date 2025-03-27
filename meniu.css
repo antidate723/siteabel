@@ -2,7 +2,7 @@
 /* Setează stilurile de bază pentru pagina */
 body {
     font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
-    margin: 0;      /* Fără margini implicite */
+    margin: 0;       /* Fără margini implicite */
     padding: 0;     /* Fără padding */
     text-align: center;  /* Centrează textul în pagină */
 }

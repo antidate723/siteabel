@@ -1,5 +1,4 @@
-/* Stilizarea imaginii din secțiunea de bun venit */
-/* Stilizarea imaginii din secțiunea de bun venit */
+
 .welcome-image {
   width: 100vw;         /* Ocupă toată lățimea ecranului */
   max-width: 100%;      /* Se asigură că nu depășește containerul */
@@ -8,16 +7,8 @@
   display: block;       /* Elimină spațiile goale sub imagine */
 }
 
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #000000;
-}
 
-h1 {
-  margin: 20px;
-  color: #333;
-}
+
 
 .galerie {
   display: grid;
@@ -69,45 +60,6 @@ header {
   z-index: 1000;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: auto;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  color: rgb(114, 30, 30);
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.hero {
-  background: url('hero.jpg') no-repeat center center/cover;
-  color: rgb(155, 40, 40);
-  text-align: center;
-  padding: 20px 1px;
-}
-
-.hero h1 {
-  font-size: 25px;
-}
-
-.hero p {
-  font-size: 24px;
-  margin-bottom: 2px;
-}
-
 .btn {
   background: #ff6600;
   color: white;
@@ -126,70 +78,6 @@ body {
   margin: 0;      /* Fără margini implicite */
   padding: 0;     /* Fără padding */
   text-align: center;  /* Centrează textul în pagină */
+  background: url('more-leaves.png') no-repeat center center/cover;
 }
 
-/*-------------------- Bara de navigare (navbar) --------------------*/
-.navbar {
-  background-color: #ffffff;  /* Fundal alb pentru bara de navigare */
-  padding: 10px;              /* Spațiere internă */
-  box-shadow: 0 4px 6px rgba(255, 0, 0, 0); /* Umbra; aici nu are efect deoarece alpha e 0 */
-  position: block;            /* Tip de poziționare; de obicei se folosește 'relative' sau 'fixed', dar aici este 'block' */
-}
-
-/*-------------------- Butonul de toggle pentru meniu --------------------*/
-.menu-toggle {
-  cursor: pointer;        /* Schimbă cursorul la pointer pentru a indica interactivitate */
-  font-size: 24px;        /* Mărimea fontului pentru buton */
-  border: none;           /* Fără bordură */
-  background: #ffffff;     /* Fundal alb */
-  display: block;         /* Afișează ca element bloc */
-  margin: auto;           /* Centrează pe orizontală */
-}
-
-/*-------------------- Lista de meniuri (menu-items) --------------------*/
-.menu-items {
-  list-style: none;       /* Elimină marcajele implicite ale listei */
-  padding: 0;             /* Fără padding */
-  margin: 0;              /* Fără margin */
-  display: none;          /* Ascunsă inițial (va fi afișată la click) */
-  background: transparent; /* Fundal transparent */
-  position: relative;     /* Poziționare relativă */
-  width: 100%;            /* Lățime completă */
-  box-shadow: none;       /* Fără umbră */
-  /*box-shadow: 0 0px 0px rgba(255, 255, 255, 0);*/  /* Alternativ: o altă setare de umbră, momentan comentată */
-}
-
-/*-------------------- Elementele individuale din meniu --------------------*/
-.menu-items li {
-  padding: 10px;                   /* Spațiere internă pentru fiecare element */
-  border-bottom: 1px solid #ddd;   /* Linie de separare între elemente */
-  background: #ffffff;             /* Fundal alb pentru fiecare element */
-  color: rgb(0, 0, 0);              /* Text negru */
-}
-
-/* La trecerea mouse-ului peste un element de meniu, se schimbă fundalul */
-.menu-items li:hover {
-  background: #f0f0f0;             /* Fundal gri deschis la hover */
-}
-
-/*-------------------- Meniul afișat (când se adaugă clasa 'show') --------------------*/
-.menu-items.show {
-  display: block;    /* Afișează lista de meniuri */
-  background: #ddd;  /* Fundal gri pentru întregul meniu afișat */
-}
-
-/*-------------------- Link-urile din meniu --------------------*/
-.menu-items li a {
-  background: transparent;   /* Fără fundal pentru link (moștenește fundalul elementului părinte) */
-  color: #000000;            /* Text negru */
-  padding: 5px;              /* Spațiere internă pentru link */
-  display: block;            /* Link-ul ocupă tot spațiul elementului de listă */
-  text-decoration: none;     /* Elimină sublinierea implicită */
-}
-
-footer {
-  background-color: #000000;     /* Fundal gri închis */
-  color: rgb(105, 32, 32);      /* Culoare text specifică */
-  text-align: center;         /* Text centrat */
-  padding: 20px;              /* Spațiere internă */
-}
