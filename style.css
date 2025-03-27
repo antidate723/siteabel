@@ -6,10 +6,20 @@ body {
     padding: 0;     /* Fără padding */
     text-align: center;  /* Centrează textul în pagină */
     background-color: ffffff;
+    background: url('more-leaves.png') no-repeat center center/cover;
 }
 
-/*-------------------- Imaginea de bun venit --------------------*/
-/* Stilizarea imaginii din secțiunea de bun venit */
+h1 {
+    font-family: "Times New Roman", Times, serif;  /* Font clasic */
+    font-style: italic;                              /* Stil italic */
+}
+
+
+p {
+    font-family: "Times New Roman", Times, serif;  /* Font clasic */
+    font-style: italic;                              /* Stil italic */
+}
+
 .welcome-image {
     width: 100%;           /* Imaginea se întinde pe 100% din container (responsive) */
     max-width: 600px;      /* Lățime maximă de 600px */
@@ -18,75 +28,3 @@ body {
     margin: 0px auto;      /* Centrează imaginea orizontal */
     /*align-items: center;*/ /* Comentariu: proprietate nefolosită aici */
 }
-
-/*-------------------- Header-ul și navigația de sus --------------------*/
-/* Header fixat în partea de sus a paginii */
-header {
-    background-color: #000000;  /* Fundal gri închis */
-    color: rgb(89, 0, 255);            /* Text alb */
-    padding: 15px 0;         /* Spațiere verticală de 15px */
-    position: fixed;         /* Fixat la partea de sus */
-    width: 100%;             /* Ocupă întreaga lățime */
-    top: 0;                  /* Poziționat la marginea de sus */
-    z-index: 1000;           /* Se asigură că este deasupra altor elemente */
-}
-
-
-/*-------------------- Secțiunea Hero (Bine ai venit) --------------------*/
-/* Secțiunea cu imagine de fundal și text de întâmpinare */
-.hero {
-    background: url('hero.jpg') no-repeat center center/cover; /* Imagine de fundal, centrată și acoperind complet zona */
-    color: rgb(0, 0, 0);      /* Culoarea textului din secțiune */
-    text-align: center;         /* Text centrat */
-    padding: 100px 10px;         /* Spațiere mare pentru a crea un impact vizual */
-}
-
-/* Titlul din secțiunea Hero */
-.hero h1 {
-    font-size: 48px;            /* Dimensiune mare pentru titlu */
-}
-
-/* Paragrafele din secțiunea Hero */
-.hero p {
-    font-size: 24px;            /* Dimensiune font pentru paragrafe */
-    margin-bottom: 20px;        /* Spațiere sub paragrafe */
-}
-
-
-/*-------------------- Galerie de imagini --------------------*/
-/* Containerul pentru imaginile din galerie */
-.grid-imagini {
-    display: flex;              /* Folosește flexbox pentru aranjare */
-    justify-content: center;    /* Centrează imaginile */
-    gap: 10px;                  /* Spațiere între imagini */
-}
-
-/* Stilizare pentru fiecare imagine din galerie */
-.grid-imagini img {
-    width: 200px;               /* Lățime fixă pentru imagini */
-    height: auto;               /* Înălțime automată pentru a păstra raportul */
-    border-radius: 10px;        /* Colțuri rotunjite */
-}
-
-/*-------------------- Footer --------------------*/
-/* Stilizarea subsolului paginii */
-footer {
-    background-color: #333;     /* Fundal gri închis */
-    color: rgb(255, 255, 255);      /* Culoare text specifică */
-    text-align: center;         /* Text centrat */
-    padding: 20px;              /* Spațiere internă */
-}
-
-/*-------------------- Stiluri pentru titluri și paragrafe speciale --------------------*/
-/* Titlurile h1 folosesc un font clasic și stil italic */
-h1 {
-    font-family: "Times New Roman", Times, serif;  /* Font clasic */
-    font-style: italic;                              /* Stil italic */
-}
-
-/* Paragrafele p folosesc același font clasic și stil italic */
-p {
-    font-family: "Times New Roman", Times, serif;  /* Font clasic */
-    font-style: italic;                              /* Stil italic */
-}
-
