@@ -1,4 +1,12 @@
-
+* {   
+  font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
+  margin: 0;      /* Fără margini implicite */
+  padding: 0;     /* Fără padding */
+  text-align: center;  /* Centrează textul în pagină */
+  background-image: url('floor-tile.png');
+  background-size: 200px; /* Ajustează dimensiunea dorită */
+  background-repeat: repeat;
+}
 .welcome-image {
   width: 100vw;         /* Ocupă toată lățimea ecranului */
   max-width: 100%;      /* Se asigură că nu depășește containerul */
@@ -7,13 +15,7 @@
   display: block;       /* Elimină spațiile goale sub imagine */
 }
 
-body {   
-  font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
-  margin: 0;      /* Fără margini implicite */
-  padding: 0;     /* Fără padding */
-  text-align: center;  /* Centrează textul în pagină */
-  background: url('more-leaves.png') no-repeat center center/cover;
-}
+
 
 
 footer {    

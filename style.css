@@ -1,13 +1,14 @@
 
 
-body {
+* {   
     font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
     margin: 0;      /* Fără margini implicite */
     padding: 0;     /* Fără padding */
     text-align: center;  /* Centrează textul în pagină */
-    background-color: ffffff;
-    background: url('more-leaves.png') no-repeat center center/cover;
-}
+    background-image: url('floor-tile.png');
+    background-size: 200px; /* Ajustează dimensiunea dorită */
+    background-repeat: repeat;
+  }
 
 h1 {
     font-family: "Times New Roman", Times, serif;  /* Font clasic */

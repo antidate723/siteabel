@@ -12,6 +12,12 @@
   padding: 100px 10px;         /* Spațiere mare pentru a crea un impact vizual */
 }
 
+.navbar-toggler {
+  box-shadow: none !important;
+}
+
+
+
 
 
 
@@ -27,11 +33,14 @@
 
 /*-------------------- Stilizare pentru body --------------------*/
 /* Setează stilurile de bază pentru pagina */
-body {
+* {   
   font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
   margin: 0;      /* Fără margini implicite */
   padding: 0;     /* Fără padding */
   text-align: center;  /* Centrează textul în pagină */
+  background-image: url('floor-tile.png');
+  background-size: 200px; /* Ajustează dimensiunea dorită */
+  background-repeat: repeat;
 }
 
  
