@@ -1,7 +1,3 @@
-/*-------------------- Resetare stiluri implicite --------------------*/
-/* Această regulă se aplică tuturor elementelor pentru a elimina marginile și padding-ul implicite și pentru a seta un box-sizing consistent */
-
-
 /*-------------------- Stilizare pentru body --------------------*/
 /* Setează stilurile de bază pentru pagina */
 body {
@@ -12,71 +8,13 @@ body {
     background-color: d3d3d3;
 }
 
-/*-------------------- Bara de navigare (navbar) --------------------*/
-.navbar {
-    background-color: #758aff;  /* Fundal alb pentru bara de navigare */
-    padding: 11px;              /* Spațiere internă */
-    box-shadow: 0 4px 6px rgb(50, 7, 206); /* Umbra; aici nu are efect deoarece alpha e 0 */
-    position: block;            /* Tip de poziționare; de obicei se folosește 'relative' sau 'fixed', dar aici este 'block' */
-}
-
-/*-------------------- Butonul de toggle pentru meniu --------------------*/
-.menu-toggle {
-    cursor: pointer;        /* Schimbă cursorul la pointer pentru a indica interactivitate */
-    font-size: 24px;        /* Mărimea fontului pentru buton */
-    border: none;           /* Fără bordură */
-    background: #ff00dd;     /* Fundal alb */
-    display: block;         /* Afișează ca element bloc */
-    margin: auto;           /* Centrează pe orizontală */
-}
-
-/*-------------------- Lista de meniuri (menu-items) --------------------*/
-.menu-items {
-    list-style: none;       /* Elimină marcajele implicite ale listei */
-    padding: 0;             /* Fără padding */
-    margin: 0;              /* Fără margin */
-    display: none;          /* Ascunsă inițial (va fi afișată la click) */
-    background: transparent; /* Fundal transparent */
-    position: relative;     /* Poziționare relativă */
-    width: 100%;            /* Lățime completă */
-    box-shadow: none;       /* Fără umbră */
-    /*box-shadow: 0 0px 0px rgba(255, 255, 255, 0);*/  /* Alternativ: o altă setare de umbră, momentan comentată */
-}
-
-/*-------------------- Elementele individuale din meniu --------------------*/
-.menu-items li {
-    padding: 10px;                   /* Spațiere internă pentru fiecare element */
-    border-bottom: 1px solid #2af701;   /* Linie de separare între elemente */
-    background: #ff06d5;             /* Fundal alb pentru fiecare element */
-    color: rgb(41, 206, 35);              /* Text negru */
-}
-
-/* La trecerea mouse-ului peste un element de meniu, se schimbă fundalul */
-.menu-items li:hover {
-    background: #310499;             /* Fundal gri deschis la hover */
-}
-
-/*-------------------- Meniul afișat (când se adaugă clasa 'show') --------------------*/
-.menu-items.show {
-    display: block;    /* Afișează lista de meniuri */
-    background: #4c0f9b;  /* Fundal gri pentru întregul meniu afișat */
-}
-
-/*-------------------- Link-urile din meniu --------------------*/
-.menu-items li a {
-    background: transparent;   /* Fără fundal pentru link (moștenește fundalul elementului părinte) */
-    color: #4400ff;            /* Text negru */
-    padding: 5px;              /* Spațiere internă pentru link */
-    display: block;            /* Link-ul ocupă tot spațiul elementului de listă */
-    text-decoration: none;     /* Elimină sublinierea implicită */
-}
 
 /*-------------------- Imaginea de bun venit --------------------*/
 /* Stilizarea imaginii din secțiunea de bun venit */
 .welcome-image {
     width: 100%;           /* Imaginea se întinde pe 100% din container (responsive) */
-    max-width: 600px;      /* Lățime maximă de 600px */
-    /*height: ;*/         /* Înălțimea nu este specificată, astfel încât se păstrează raportul original */
+    max-width: 00px;      /* Lățime maximă de 600px */
+    height: 200px;        /* Înălțimea nu este specificată, astfel încât se păstrează raportul original */
     display: block;        /* Afișare ca element bloc */
     margin: 0px auto;      /* Centrează imaginea orizontal */
     /*align-items: center;*/ /* Comentariu: proprietate nefolosită aici */
@@ -160,8 +98,7 @@ nav ul li a {
 /*-------------------- Footer --------------------*/
 /* Stilizarea subsolului paginii */
 footer {
-<<<<<<< HEAD
-  background-color: #333;
+  background-color: #333; 
   color: rgb(182, 67, 67);
   text-align: center;
   padding: 20px;
@@ -192,7 +129,6 @@ nav ul li a {
   color: rgb(255, 0, 0);       /* Culoare personalizată pentru text */
   text-decoration: none;        /* Fără subliniere */
   font-size: 18px;              /* Dimensiune font */
-=======
     background-color: #333;     /* Fundal gri închis */
     color: rgb(255, 255, 255);      /* Culoare text specifică */
     text-align: center;         /* Text centrat */
@@ -210,5 +146,4 @@ h1 {
 p {
     font-family: "Times New Roman", Times, serif;  /* Font clasic */
     font-style: italic;                              /* Stil italic */
->>>>>>> 56dd04a80e433a1a4c4409c45c2226c465f7e801
 }

@@ -36,7 +36,7 @@ function verificaStatus() {
         return current >= start && current <= end;
     }) ?? false;
 
-    status.innerHTML = deschis ? "Jetzt öffnen" : "Jetzt geschlossen";
+    status.innerHTML = deschis ? "deschis" : "inchis";
     status.style.color = deschis ? "green" : "red";
 }
 
