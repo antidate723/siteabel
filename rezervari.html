@@ -29,6 +29,191 @@
             </div>
         </div>   
     </nav>
+<!---------------------------------------------------------------------------->
+    <button id="chatButton">💬</button>
+
+<div id="chatContainer">
+    <div id="chatHeader">
+        alex
+        <button id="closeChat">✖</button>
+    </div>
+    <div id="chatBody">
+        <p>cu ce te ajut</p>
+    </div>
+    <input type="text" id="chatInput" placeholder="..." />
+</div>
+
+<style>
+
+.navbar-toggler {
+  box-shadow: none !important;
+}
+  /* Butonul de chat */
+  #chatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #c1c6cc;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #chatButton:hover {
+    transform: scale(1.1);
+    background-color: #c1c6cc;
+  }
+
+  /* Containerul chat-ului */
+  #chatContainer {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: none; /* Ascuns inițial */
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+
+  /* Header-ul ferestrei de chat */
+  #chatHeader {
+    background: #c1c6cc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Butonul de închidere */
+  #closeChat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #closeChat:hover {
+    color: #ddd;
+  }
+
+  /* Corpul chat-ului */
+  #chatBody {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 14px;
+  }
+
+  /* Input-ul de mesaj */
+  #chatInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+    outline: none;
+  }
+</style>
+
+<script>
+    document.getElementById("chatButton").addEventListener("click", function() {
+        document.getElementById("chatContainer").style.display = "flex";
+    });
+
+    document.getElementById("closeChat").addEventListener("click", function() {
+        document.getElementById("chatContainer").style.display = "none";
+    });
+
+    document.getElementById("chatInput").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            sendMessage();
+        }
+    });
+
+    function sendMessage() {
+        let inputField = document.getElementById("chatInput");
+        let message = inputField.value.trim();
+        
+        if (message !== "") {
+            let chatBody = document.getElementById("chatBody");
+
+            // Creăm container pentru mesaj
+            let messageContainer = document.createElement("div");
+            messageContainer.classList.add("message", "user-message");
+            messageContainer.textContent = message;
+
+            chatBody.appendChild(messageContainer);
+            chatBody.scrollTop = chatBody.scrollHeight;
+            inputField.value = "";
+
+            // Simulăm un răspuns automat de la bot
+            setTimeout(() => {
+                let botReply = document.createElement("div");
+                botReply.classList.add("message", "bot-message");
+                botReply.textContent = "Interesant! Spune-mi mai multe!";
+                chatBody.appendChild(botReply);
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }, 1000);
+        }
+    }
+</script>
+
+<style>
+  /* Stilizare mesaje */
+  .message {
+    max-width: 70%;
+    padding: 10px 15px;
+    margin: 5px 10px;
+    border-radius: 18px;
+    font-size: 14px;
+    word-wrap: break-word;
+    display: inline-block;
+  }
+
+  /* Mesajele utilizatorului */
+  .user-message {
+    background: #007aff; /* Albastru Instagram */
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  /* Mesajele botului */
+  .bot-message {
+    background: #e5e5ea; /* Gri deschis */
+    color: black;
+    align-self: flex-start;
+    text-align: left;
+    margin-right: auto;
+  }
+
+  /* Chat body îmbunătățit */
+  #chatBody {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
+
+
+
+
+
 
     <footer>
         <p>© <span id="year"></span> D` Amici. Toate drepturile rezervate.</p>

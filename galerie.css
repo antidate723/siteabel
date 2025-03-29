@@ -15,13 +15,14 @@
   display: block;       /* Elimină spațiile goale sub imagine */
 }
 
-
+/*  display: flex;
+  justify-content: center;*/
 
 
 .galerie {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  gap: 20px 10px;
   max-width: 900px;
   margin: auto;
   padding: 20px;
@@ -37,6 +38,7 @@
 
 .galerie img:hover {
   transform: scale(1.05);
+
 }
 
 /* Lightbox */
@@ -88,3 +90,6 @@ body {
   background-repeat: repeat;
 }
 
+h1 {
+  padding: 50px;
+}
